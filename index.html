@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="icon" type="image/x-icon" href="source/img/pokeball.png">
+  <link rel="stylesheet" href="source/css/styles.css">
+  <link rel="stylesheet" media="(max-width: 768px)" href="source/css/StylesMin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="pokeheader"><h1 class="poketitle">Pokedex</h1>
+    <div class="pokebuscador">
+    <input type="text" class="pokeNameSearch" id="pokeNameSearch" placeholder="Buscar Pokemon por nombre o por numero" >
+    <button class="busquedaPokemon" onclick="fechPokemon()"></button>
+   <!---<p class="Orden">Ordenar por...</p>-->
+    <div class="tipoPokemon">
+     <!-- <select name="selecPokemonType">
+      <option class="OptionPokemon" value="0"  selected>Cualquiera...</option>
+      <option class="OptionPokemon" value="1">Normal</option> 
+      <option class="OptionPokemon" value="2">Lucha</option> 
+      <option class="OptionPokemon" value="3">Volador</option>
+      <option class="OptionPokemon" value="4">Veneno</option> 
+      <option class="OptionPokemon" value="5">Terrestre</option> 
+      <option class="OptionPokemon" value="6">Roca</option> 
+      <option class="OptionPokemon" value="7">Bicho</option> 
+      <option class="OptionPokemon" value="8">Fantasma</option> 
+      <option class="OptionPokemon" value="9">Metal</option> 
+      <option class="OptionPokemon" value="10">Fuego</option> 
+      <option class="OptionPokemon" value="11">Agua</option> 
+      <option class="OptionPokemon" value="12">Hierba</option> 
+      <option class="OptionPokemon" value="13">Electrico</option> 
+      <option class="OptionPokemon" value="14">Psiquico</option> 
+      <option class="OptionPokemon" value="15">Hielo</option> 
+      <option class="OptionPokemon" value="16">Dragon</option> 
+      <option class="OptionPokemon" value="17">Obscuro</option> 
+      <option class="OptionPokemon" value="18">Hada</option> 
+   </select>-->
+  </div>
+   </div>
+   <div class="numeroPokemon">
+     <!--<button class="numeroP">Numero de Pokemon</button>-->
+   </div>
+   
+  </div>
+  
+  <div class="cuerpoPokedex">
+    <p>DATOS DEL POKEMON</p>
+  </div>
+  <div class="datosPokemon">
+    <div class="nombrePokemonS"><p>Nombre<p class="NomPoke" id="NomPoke" contenteditable="true">---</p></p></div>
+    <div class="numeroPokemonS"><p>No.<p class="NumPoke" id="NumPoke" contenteditable="true">---</p></p></div>
+    <div class="tipoPokemonS"><p>Tipo<p class="TipPoke" id="TipPoke" contenteditable="true">---</p></p></div>
+    <div class="statsPokemonS"><p>Estadisticas<p class="StaPoke" id="StaPoke" contenteditable="true">---</p></p></div>
+    <div class="movesPokemonS"><p>Movimientos<p class="MovPoke" id="MovPoke" contenteditable="true">---</p></p></div>
+  </div>
+  
+  <div class="ImgPokemon">
+    <div>
+      <button class="normalH" id="normalH" onclick="PokemonH()"><span class="tooltipH">Normal Masculino</span></button>
+      <button class="normalF" id="normalF" onclick="PokemonF()"><span class="tooltipF">Normal Femenino</span></button>
+      <button class="shinyH" id="shinyH" onclick="PokemonHShiny()"><span class="tooltipHS">Shiny Masculino</span></button>
+      <button class="shinyF" id="shinyF" onclick="PokemonFShiny()"><span class="tooltipFS">Shiny Femenino</span></button></div>
+    <img src="source/img/pokeball.png" class="imgPoke" id="imgPoke">
+   </div>
+   
+</body>
+<footer>
+  <script src="source/js/Funciones.js"></script>
+</footer>
+
+<div class="footer"><P class="poketitlep">Pokedex By ErickSG</P></div>
+</html>
+
